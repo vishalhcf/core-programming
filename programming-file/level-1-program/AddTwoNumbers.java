@@ -1,13 +1,30 @@
+// Program: Add Two Numbers
+// Level: 1 - Java Input and Arithmetic
+// Author: Vishal Kumar
+
 import java.util.Scanner;
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        // Create Scanner object to take user input
+        Scanner input = new Scanner(System.in);
+
+        // Variable declarations
+        int firstNumber;
+        int secondNumber;
+        int sum;
+
+        // Taking two numbers as input
         System.out.print("Enter first number: ");
-        int a = sc.nextInt();
+        firstNumber = input.nextInt();
+
         System.out.print("Enter second number: ");
-        int b = sc.nextInt();
-        int sum = a + b;
+        secondNumber = input.nextInt();
+
+        // Calculating the sum
+        sum = firstNumber + secondNumber;
+
+        // Displaying the result
         System.out.println("Sum: " + sum);
     }
 }
